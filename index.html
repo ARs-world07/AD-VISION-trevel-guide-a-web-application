@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhopal Marketing & Travel Guide | HTML, CSS, JS</title>
+
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <a href="#" class="logo"><span>AD</span>-VISION</a>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#book">book</a>
+            <a href="#packages">packages</a>
+            <a href="#services">services</a>
+            <a href="#gallery">gallery</a>
+            <a href="#review">review</a>
+            <a href="#contact">contact</a>
+        </nav>
+
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search here...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+    </header>
+
+    <div class="login-form-container">
+        <i class="fas fa-times" id="form-close"></i>
+        <form action="">
+            <h3>login</h3>
+            <input type="email" class="box" placeholder="enter your email">
+            <input type="password" class="box" placeholder="enter your password">
+            <input type="submit" value="login now" class="btn">
+            <input type="checkbox" id="remember">
+            <label for="remember">remember me</label>
+            <p>forget password? <a href="#">click here</a></p>
+            <p>don't have an account? <a href="#">register now</a></p>
+        </form>
+    </div>
+
+    <!-- Home Section Starts -->
+    <section class="home" id="home">
+        <div class="content">
+            <h3>MARKETING AND TRAVEL GUIDE WEBSITE</h3>
+            <p>Discover NEW PLACES WITH US,ADVENTURE AWAITS</p> <!-- Updated Tagline -->
+            <a href="#packages" class="btn">discover more</a>
+        </div>
+
+        <div class="controls">
+             <!-- Make sure you have vid-1.mp4 to vid-5.mp4 in images folder -->
+            <span class="vid-btn active" data-src="images/vid-1.mp4"></span>
+            <span class="vid-btn " data-src="images/vid-2.mp4"></span>
+            <span class="vid-btn " data-src="images/vid-3.mp4"></span>
+            <span class="vid-btn " data-src="images/vid-4.mp4"></span>
+            <span class="vid-btn " data-src="images/vid-5.mp4"></span>
+        </div>
+
+        <div class="video-container">
+             <!-- Initial video -->
+            <video src="images/vid-1.mp4" id="video-slider" loop autoplay></video>
+        </div>
+    </section>
+    <!-- Home Section Ends -->
+
+    <main> <!-- Wrap main content sections -->
+
+    <!-- Book Section Starts -->
+    <section class="book" id="book">
+        <h1 class="heading">
+            <span>b</span><span>o</span><span>o</span><span>k</span><span class="space"></span><span>n</span><span>o</span><span>w</span>
+        </h1>
+        <div class="row">
+            <div class="image">
+                <!-- Make sure you have book-img.svg in images folder -->
+                <img src="images/book-img.jpg" alt="Booking illustration">
+            </div>
+            <form action="">
+                <div class="inputBox">
+                    <h3>where to</h3>
+                    <input type="text" placeholder="place name (e.g., Bhopal)"> <!-- Updated Placeholder -->
+                </div>
+                <div class="inputBox">
+                    <h3>how many</h3>
+                    <input type="number" placeholder="number of guests" min="1">
+                </div>
+                <div class="inputBox">
+                    <h3>arrivals</h3>
+                    <input type="date">
+                </div>
+                <div class="inputBox">
+                    <h3>leaving</h3>
+                    <input type="date">
+                </div>
+                <input type="submit" class="btn" value="book now">
+            </form>
+        </div>
+    </section>
+    <!-- Book Section Ends -->
+
+    <!-- Packages Section Starts -->
+    <section class="packages" id="packages">
+        <h1 class="heading">
+            <span>p</span><span>o</span><span>p</span><span>u</span><span>l</span><span>a</span><span>r</span><span class="space"></span><span>p</span><span>l</span><span>a</span><span>c</span><span>e</span><span>s</span>
+        </h1>
+        <div class="box-container">
+            <!-- Package 1: Upper Lake (Bada Talab) -->
+            <div class="box">
+                 <!-- Add an image named p-1.jpg for Upper Lake -->
+                <img src="images/p-1.jpeg" alt="Upper Lake (Bada Talab), Bhopal">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> Upper Lake (Bada Talab) </h3>
+                    <p>One of the oldest man-made lakes in India, offering boating and scenic views.</p>
+                    <div class="stars"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> </div>
+                    <div class="price"> Free (Boating extra)</div>
+                    <a href="https://www.google.com/maps/place/Upper+Lake,+Bhopal,+Madhya+Pradesh" target="_blank" class="btn">Visit</a>
+                </div>
+            </div>
+            <!-- Package 2: Van Vihar National Park -->
+            <div class="box">
+                 <!-- Add an image named p-2.jpg for Van Vihar -->
+                <img src="images/p-2.jpg" alt="Van Vihar National Park, Bhopal">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> Van Vihar National Park </h3>
+                    <p>A unique national park located adjacent to Upper Lake, home to various animals.</p>
+                     <div class="stars"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> </div>
+                    <div class="price"> Entry Fee Applies </div>
+                    <a href="https://www.google.com/maps/place/Van+Vihar+National+Park+Bhopal" target="_blank" class="btn">Visit</a>
+                </div>
+            </div>
+            <!-- Package 3: Taj-ul-Masajid -->
+            <div class="box">
+                 <!-- Add an image named p-3.jpg for Taj-ul-Masajid -->
+                 <img src="images/p-3.jpg" alt="Taj-ul-Masajid, Bhopal">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> Taj-ul-Masajid </h3>
+                    <p>One of the largest mosques in Asia, known for its grand architecture.</p>
+                    <div class="stars"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> </div>
+                    <div class="price"> Free Entry </div>
+                    <a href="https://www.google.com/maps/place/Taj+Ul+Masajid+Rd,+Bhopal,+Madhya+Pradesh" target="_blank" class="btn">Visit</a>
+                </div>
+            </div>
+             <!-- Package 4: State Museum Bhopal -->
+            <div class="box">
+                 <!-- Add an image named p-4.jpg for State Museum -->
+                 <img src="images/p-4.jpg" alt="State Museum, Bhopal">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> State Museum Bhopal </h3>
+                    <p>Houses a rich collection of artifacts showcasing the history and culture of Madhya Pradesh.</p>
+                    <div class="stars"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i> </div>
+                    <div class="price"> Entry Fee Applies </div>
+                    <a href="https://www.google.com/maps/place/State+Museum+Bhopal" target="_blank" class="btn">Visit</a>
+                </div>
+            </div>
+            <!-- Package 5: Bhojpur Temple -->
+             <div class="box">
+                 <!-- Add an image named p-5.jpg for Bhojpur Temple -->
+                <img src="images/p-5.jpg" alt="Bhojpur Temple (Bhojeshwar Temple)">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> Bhojpur Temple </h3>
+                     <p>An incomplete but massive 11th-century Hindu temple dedicated to Lord Shiva, near Bhopal.</p>
+                     <div class="stars"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> </div>
+                     <div class="price"> Free Entry </div>
+                     <a href="https://www.google.com/maps/place/Bhojeshwar+Mahadev+Temple,+Bhojpur" target="_blank" class="btn">Visit</a>
+                </div>
+            </div>
+             <!-- Package 6: DB City Mall -->
+            <div class="box">
+                <!-- Add an image named p-6.jpg for DB City Mall -->
+                <img src="images/p-6.webp" alt="DB City Mall, Bhopal">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> DB City Mall </h3>
+                    <p>One of the largest shopping malls in Central India, located in Maharana Pratap Nagar.</p>
+                    <div class="stars"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> </div>
+                    <div class="price"> Shopping $$$ </div>
+                    <a href="https://www.google.com/maps/place/DB+City+Mall,+Bhopal" target="_blank" class="btn">Visit</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Packages Section Ends -->
+
+    <!-- Services Section Starts -->
+    <section class="services" id="services">
+        <h1 class="heading">
+            <span>s</span><span>e</span><span>r</span><span>v</span><span>i</span><span>c</span><span>e</span><span>s</span>
+        </h1>
+        <div class="box-container">
+            <div class="box">
+                <i class="fas fa-hotel"></i>
+                <h3>affordable hotels</h3>
+                <p>Find great deals on hotels in Bhopal for every budget. Book easily online.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-utensils"></i>
+                <h3>food and drinks</h3>
+                <p>Explore Bhopal's culinary delights, from Poha Jalebi to traditional Bhopali cuisine.</p>
+            </div>
+            <div class="box">
+                 <i class="fas fa-bullhorn"></i>
+                <h3>safety guide</h3>
+                <p>Travel tips and safety information to ensure a smooth and secure visit to Bhopal.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-globe-asia"></i>
+                <h3>around the city</h3>
+                <p>Discover attractions, day trips (like Sanchi), and hidden gems in and around Bhopal.</p>
+            </div>
+             <div class="box">
+                <i class="fas fa-plane"></i>
+                <h3>fastest travel</h3>
+                <p>Information on flights (Raja Bhoj Airport), trains, metro, and cabs for efficient travel.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-hiking"></i>
+                <h3>adventures</h3>
+                <p>Find activities like boating on the lakes, visiting national parks, and exploring nearby historical sites.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Services Section Ends -->
+
+    <!-- Gallery Section Starts -->
+    <section class="gallery" id="gallery">
+         <h1 class="heading">
+            <span>g</span><span>a</span><span>l</span><span>l</span><span>e</span><span>r</span><span>y</span><span class="space">&</span><span>l</span><span>i</span><span>n</span><span>k</span><span>s</span>
+        </h1>
+        <div class="box-container">
+             <div class="box">
+                 <!-- Add g-1.jpg for Sair Sapata or similar park -->
+                <img src="images/g-1.jpg" alt="Sair Sapata, Bhopal">
+                <div class="content">
+                    <h3>Sair Sapata</h3>
+                    <p>A tourism and entertainment complex by MP Tourism.</p>
+                    <a href="https://mptourism.com/destination/bhopal/sair-sapata/" target="_blank" class="btn">Visit</a>
+                </div>
+            </div>
+            <div class="box">
+                <!-- Add g-2.jpg for Jehan Numa Palace Hotel -->
+                <img src="images/g-2.avif" alt="Jehan Numa Palace Hotel">
+                <div class="content">
+                    <h3>Jehan Numa Palace</h3>
+                    <p>A well-known heritage hotel in Bhopal.</p>
+                    <a href="https://www.jehannuma.com/" target="_blank" class="btn">Visit</a>
+                </div>
+            </div>
+             <div class="box">
+                <!-- Add g-3.jpg for Raja Bhoj Airport -->
+                <img src="images/g-3.jpg" alt="Raja Bhoj Airport, Bhopal">
+                <div class="content">
+                    <h3>Raja Bhoj Airport</h3>
+                    <p>Connects Bhopal to major Indian cities.</p>
+                     <a href="https://www.google.com/maps/place/Raja+Bhoj+International+Airport" target="_blank" class="btn">Visit</a>
+                </div>
+            </div>
+            <div class="box">
+                 <!-- Keep g-4.jpg generic for BookMyShow -->
+                <img src="images/g-4.jpg" alt="BookMyShow Logo">
+                <div class="content">
+                    <h3>BookMyShow</h3>
+                    <p>Book movie tickets, event passes, and more in Bhopal.</p>
+                    <a href="https://in.bookmyshow.com/bhopal" target="_blank" class="btn">Visit</a>
+                </div>
+            </div>
+             <div class="box">
+                <!-- Keep g-5.jpg generic for Swiggy -->
+                <img src="images/g-5.png" alt="Swiggy Food Delivery">
+                <div class="content">
+                    <h3>Swiggy</h3>
+                    <p>Order food from various restaurants in Bhopal.</p>
+                    <a href="https://www.swiggy.com/city/bhopal" target="_blank" class="btn">Visit</a>
+                </div>
+            </div>
+            <div class="box">
+                 <!-- Keep g-6.jpg generic for Uber -->
+                <img src="images/g-6.png" alt="Uber App Interface">
+                <div class="content">
+                    <h3>Uber Cabs</h3>
+                    <p>Book rides easily using the Uber app in Bhopal.</p>
+                    <a href="https://www.uber.com/in/en/" target="_blank" class="btn">Visit</a>
+                </div>
+            </div>
+             <div class="box">
+                <!-- Keep g-7.png generic for Google Maps -->
+                <img src="images/g-7.png" alt="Google Maps Interface">
+                <div class="content">
+                    <h3>Google Maps</h3>
+                    <p>Navigate Bhopal, find places, and get directions.</p>
+                    <a href="https://www.google.com/maps/place/Bhopal,+Madhya+Pradesh" target="_blank" class="btn">Visit</a>
+                </div>
+            </div>
+             <div class="box">
+                <!-- Keep g-8.jpg generic for Zomato -->
+                <img src="images/g-8.png" alt="Zomato App Interface">
+                <div class="content">
+                    <h3>Zomato</h3>
+                    <p>Discover restaurants, read reviews, and order food in Bhopal.</p>
+                    <a href="https://www.zomato.com/bhopal" target="_blank" class="btn">Visit</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Gallery Section Ends -->
+
+    <!-- Review Section Starts -->
+    <section class="review" id="review">
+        <h1 class="heading">
+            <span>r</span><span>e</span><span>v</span><span>i</span><span>e</span><span>w</span><span>s</span>
+        </h1>
+        <div class="swiper-container review-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="box">
+                        <!-- Add pic1.png to images folder -->
+                        <img src="images/pic-1.jpeg" alt="Reviewer 1">
+                        <h3>John Deo</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa adipisci quisquam sunt nesciunt fugiat odit minus illum asperiores dolorum enim sint quod ipsam.</p>
+                        <div class="stars"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> </div>
+                    </div>
+                </div>
+                 <div class="swiper-slide">
+                    <div class="box">
+                        <!-- Add pic2.png to images folder -->
+                        <img src="images/pic-2.jpeg" alt="Reviewer 2">
+                        <h3>Jane Smith</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa adipisci quisquam sunt nesciunt fugiat odit minus illum asperiores dolorum enim sint quod ipsam.</p>
+                        <div class="stars"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <!-- Add pic3.png to images folder -->
+                        <img src="images/pic3.jpeg" alt="Reviewer 3">
+                        <h3>Peter Jones</h3>
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa adipisci quisquam sunt nesciunt fugiat odit minus illum asperiores dolorum enim sint quod ipsam.</p>
+                        <div class="stars"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                         <!-- Add pic4.png to images folder -->
+                        <img src="images/pic4.jpeg" alt="Reviewer 4">
+                        <h3>Mary Brown</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa adipisci quisquam sunt nesciunt fugiat odit minus illum asperiores dolorum enim sint quod ipsam.</p>
+                        <div class="stars"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i> </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                         <!-- Add pic5.webp to images folder -->
+                        <img src="images/pic-5.webp" alt="Reviewer 5">
+                        <h3>David lane</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa adipisci quisquam sunt nesciunt fugiat odit minus illum asperiores dolorum enim sint quod ipsam.</p>
+                        <div class="stars"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i> </div>
+                    </div>
+                </div>
+            </div>
+             <div class="swiper-pagination"></div> <!-- Add pagination -->
+        </div>
+    </section>
+    <!-- Review Section Ends -->
+
+    <!-- Contact Section Starts -->
+    <section class="contact" id="contact">
+        <h1 class="heading">
+            <span>c</span><span>o</span><span>n</span><span>t</span><span>a</span><span>c</span><span>t</span>
+        </h1>
+        <div class="row">
+            <div class="image">
+                 <!-- Add contact-img.svg to images folder -->
+                <img src="images/Contact-us.png" alt="Contact us illustration">
+            </div>
+            <!-- Replace YOUR_FORM_ID with your actual Formspree form ID -->
+            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" id="contact-form">
+                <div class="inputBox">
+                    <input type="text" name="firstName" placeholder="First Name" required>
+                    <input type="text" name="lastName" placeholder="Last Name" required>
+                </div>
+                 <div class="inputBox">
+                    <input type="email" name="email" placeholder="Email Address" required>
+                    <input type="number" name="number" placeholder="Phone Number">
+                 </div>
+                 <input type="text" name="subject" placeholder="Subject" required>
+                 <textarea placeholder="Your Message" name="message" required cols="30" rows="10"></textarea>
+                 <input type="submit" class="btn" value="Send Message">
+            </form>
+             <div id="form-status"></div> <!-- To show success/error messages -->
+        </div>
+    </section>
+    <!-- Contact Section Ends -->
+
+    <!-- Brand Section -->
+    <section class="brand-container">
+         <div class="swiper-container brand-slider">
+            <div class="swiper-wrapper">
+                 <!-- Add brand logos 1.jpg to 6.jpg to images folder -->
+                <div class="swiper-slide"><img src="images/1.jpeg" alt="Brand Logo 1"></div>
+                <div class="swiper-slide"><img src="images/2.png" alt="Brand Logo 2"></div>
+                <div class="swiper-slide"><img src="images/3.png" alt="Brand Logo 3"></div>
+                <div class="swiper-slide"><img src="images/4.png" alt="Brand Logo 4"></div>
+                <div class="swiper-slide"><img src="images/5.png" alt="Brand Logo 5"></div>
+                <div class="swiper-slide"><img src="images/6.png" alt="Brand Logo 6"></div>
+            </div>
+        </div>
+    </section>
+    <!-- Brand Section Ends -->
+
+    </main> <!-- End main content wrap -->
+
+    <!-- Footer Section Starts -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>about us</h3>
+                 <!-- Updated About Us text -->
+                <p>Your one-stop guide for exploring Bhopal. We provide information on popular places, services, and tips for travelers visiting the City of Lakes.</p>
+            </div>
+            <div class="box">
+                <h3>branch locations</h3>
+                <a href="#">India</a>
+                <a href="#">USA</a>
+                <a href="#">Japan</a>
+                <a href="#">France</a>
+            </div>
+            <div class="box">
+                 <h3>quick links</h3>
+                 <a href="#home">home</a>
+                 <a href="#book">book</a>
+                 <a href="#packages">packages</a>
+                 <a href="#services">services</a>
+                 <a href="#gallery">gallery</a>
+                 <a href="#review">review</a>
+                 <a href="#contact">contact</a>
+            </div>
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="#" target="_blank"> <i class="fab fa-facebook-f"></i> facebook </a>
+                <a href="#" target="_blank"> <i class="fab fa-instagram"></i> instagram </a>
+                <a href="#" target="_blank"> <i class="fab fa-twitter"></i> twitter </a>
+                <a href="#" target="_blank"> <i class="fab fa-linkedin-in"></i> linkedin </a>
+            </div>
+        </div>
+        <!-- Kept original attribution, updated year -->
+        <h1 class="credit"> created by <span>Akash Dwivedi</span> | all rights reserved © 2025 </h1>
+    </section>
+    <!-- Footer Section Ends -->
+
+
+    <!-- SwiperJS Script -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Custom JS File Link -->
+   <script src="script.js"></script>
+
+</body>
+</html>
